@@ -40,7 +40,7 @@ import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
           <li>Prazos, restrições e integrações que já existem</li>
           <li>Se já existe design system, time interno ou stack definida</li>
         </ul>
-        <div class="contact-chip">contato@nyasoftwarehouse.com</div>
+        <div class="contact-chip">contato&#64;nyasoftwarehouse.com</div>
       </aside>
     </section>
   `,

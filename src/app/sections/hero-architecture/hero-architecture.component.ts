@@ -414,7 +414,7 @@ export class HeroArchitectureComponent implements AfterViewInit {
       host.removeEventListener('pointermove', onPointerMove);
       renderer.dispose();
 
-      root.traverse((child) => {
+      root.traverse((child: THREE.Object3D) => {
         if (child instanceof THREE.Mesh) {
           child.geometry.dispose();
           const material = child.material as THREE.Material;
