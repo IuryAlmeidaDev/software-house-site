@@ -17,3 +17,6 @@ out/
 
 # Ficheiros de configuração do Editor (VS Code)
 .vscode/
+
+# Angular cache
+.angular/
