@@ -23,10 +23,10 @@ export function MethodologySection(): JSX.Element {
   return (
     <section id="methodology" className="mx-auto w-[92%] max-w-7xl border-t border-neutral-200 py-24">
       <div>
-        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-neutral-500">Método</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Método</p>
         <div className="mt-6 grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <h2 className="text-4xl font-semibold tracking-[-0.04em] text-neutral-950 md:text-5xl">Construído para execução previsível e evolução de longo prazo.</h2>
+            <h2 className="text-4xl font-semibold tracking-[-0.04em] text-[#172554] md:text-5xl">Construído para execução previsível e evolução de longo prazo.</h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-neutral-600">
               Estruturamos a entrega em torno de resultados de negócio, governança técnica e prontidão operacional para cada release evoluir com segurança.
             </p>

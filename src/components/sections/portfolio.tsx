@@ -20,9 +20,9 @@ export function PortfolioSection(): JSX.Element {
   return (
     <section id="portfolio" className="mx-auto w-[92%] max-w-7xl border-t border-neutral-200 py-24">
       <div className="grid gap-8 md:grid-cols-[0.75fr_1.25fr]">
-        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-neutral-500">Portfólio</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Portfólio</p>
         <div className="max-w-3xl">
-          <h2 className="text-4xl font-semibold tracking-[-0.04em] text-neutral-950 md:text-5xl">Ecossistemas selecionados, prontos para seus cases reais.</h2>
+          <h2 className="text-4xl font-semibold tracking-[-0.04em] text-[#172554] md:text-5xl">Ecossistemas selecionados, prontos para seus cases reais.</h2>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-neutral-600">
             Substitua estas áreas reservadas por resultados mensuráveis, detalhes de stack e visuais aprovados por clientes.
           </p>

@@ -9,7 +9,7 @@ export default {
         background: '#ffffff',
         foreground: '#111827',
         card: '#ffffff',
-        primary: '#1d4ed8',
+        primary: '#2563eb',
         muted: '#6b7280'
       }
     }

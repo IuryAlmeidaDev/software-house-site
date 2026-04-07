@@ -51,8 +51,8 @@ export function ContactSection(): JSX.Element {
     <section id="contact" className="mx-auto w-[92%] max-w-7xl border-t border-neutral-200 py-24">
       <div className="grid gap-12 md:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-neutral-500">Contato</p>
-          <h2 className="mt-6 text-4xl font-semibold tracking-[-0.04em] text-neutral-950 md:text-5xl">Planeje seu próximo ecossistema digital escalável.</h2>
+          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Contato</p>
+          <h2 className="mt-6 text-4xl font-semibold tracking-[-0.04em] text-[#172554] md:text-5xl">Planeje seu próximo ecossistema digital escalável.</h2>
           <p className="mt-6 max-w-xl text-lg leading-8 text-neutral-600">
             Compartilhe o objetivo de negócio, restrições e prazo esperado. Usaremos essas informações para orientar uma conversa técnica.
           </p>

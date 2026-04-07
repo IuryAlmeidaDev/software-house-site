@@ -13,8 +13,8 @@ export function ServicesSection(): JSX.Element {
   return (
     <section id="services" className="mx-auto w-[92%] max-w-7xl border-t border-neutral-200 py-24">
       <div className="grid gap-8 md:grid-cols-[0.75fr_1.25fr]">
-        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-neutral-500">Serviços</p>
-        <h2 className="max-w-4xl text-4xl font-semibold tracking-[-0.04em] text-neutral-950 md:text-5xl">Da estratégia ao ecossistema em produção.</h2>
+        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Serviços</p>
+        <h2 className="max-w-4xl text-4xl font-semibold tracking-[-0.04em] text-[#172554] md:text-5xl">Da estratégia ao ecossistema em produção.</h2>
       </div>
       <div className="mt-14 grid border-t border-neutral-200">
         {services.map((service, index) => (
