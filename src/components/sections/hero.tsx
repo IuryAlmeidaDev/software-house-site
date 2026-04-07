@@ -2,30 +2,58 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '../ui/button';
 
+const metrics = [
+  { value: 'B2B', label: 'Produtos e plataformas para operação real' },
+  { value: 'Cloud', label: 'Arquitetura preparada para escala' },
+  { value: 'Dados', label: 'Automação e inteligência aplicada ao negócio' }
+];
+
 export function HeroSection(): JSX.Element {
   return (
-    <section className="mx-auto flex min-h-[70vh] w-[95%] max-w-6xl flex-col justify-center py-16" id="hero">
-      <motion.h1
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="max-w-3xl bg-gradient-to-r from-violet-400 via-cyan-300 to-indigo-500 bg-clip-text text-4xl font-bold leading-tight text-transparent md:text-6xl"
-      >
-        Engenharia de software global, com execução precisa e design premium.
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.7 }}
-        className="mt-6 max-w-2xl text-lg text-slate-300"
-      >
-        A N&A Software House entrega soluções Web, Mobile e Cloud para empresas que precisam escalar com velocidade e confiabilidade.
-      </motion.p>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} className="mt-8">
-        <Button>
-          Falar com especialista <ArrowRight className="ml-2 size-4" />
-        </Button>
-      </motion.div>
+    <section className="mx-auto grid min-h-[78vh] w-[92%] max-w-7xl content-center gap-14 py-24" id="hero">
+      <div className="max-w-5xl">
+        <motion.p
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55 }}
+          className="text-sm font-semibold uppercase tracking-[0.28em] text-neutral-500"
+        >
+          Software house para empresas que precisam de engenharia séria
+        </motion.p>
+        <motion.h1
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.08, duration: 0.65 }}
+          className="mt-6 max-w-5xl text-5xl font-semibold leading-[1.02] tracking-[-0.05em] text-neutral-950 md:text-7xl"
+        >
+          Plataformas digitais escaláveis, limpas e prontas para crescer.
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.16, duration: 0.65 }}
+          className="mt-8 max-w-3xl text-xl leading-9 text-neutral-600"
+        >
+          Projetamos e desenvolvemos sistemas web, mobile, cloud e dados para negócios B2B que precisam de estabilidade, clareza técnica e evolução contínua.
+        </motion.p>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.28 }} className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <Button>
+            Solicitar diagnóstico <ArrowRight className="ml-2 size-4" />
+          </Button>
+          <Button className="border border-neutral-300 bg-card text-neutral-950 shadow-none hover:bg-neutral-100 hover:shadow-none">
+            Conhecer stack
+          </Button>
+        </motion.div>
+      </div>
+
+      <div className="grid border-y border-neutral-200 md:grid-cols-3">
+        {metrics.map((metric) => (
+          <div key={metric.value} className="border-b border-neutral-200 py-6 md:border-b-0 md:border-r md:pr-8 md:last:border-r-0">
+            <p className="text-2xl font-semibold tracking-tight text-neutral-950">{metric.value}</p>
+            <p className="mt-2 max-w-xs text-sm leading-6 text-neutral-500">{metric.label}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

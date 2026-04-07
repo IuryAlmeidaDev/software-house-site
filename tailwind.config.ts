@@ -6,11 +6,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#05070f',
-        foreground: '#e2e8f0',
-        card: '#0b1224',
-        primary: '#8b5cf6',
-        muted: '#94a3b8'
+        background: '#ffffff',
+        foreground: '#111827',
+        card: '#ffffff',
+        primary: '#1d4ed8',
+        muted: '#6b7280'
       }
     }
   },
